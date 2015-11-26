@@ -1,0 +1,234 @@
+<html>
+<head>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src = "task15.js" /></script>
+
+     <link rel = 'stylesheet' href = "hyphen.css" />
+     <link rel = 'stylesheet' href = "task15.css" />
+     <link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body id = "back">
+
+<!-- Elements Outside Form for Constants or fixed layouts -->
+
+  <div id = "fontstyle">
+    <center><br /><br /><div id = "font">0</div></center>
+
+    </div>
+
+    <div id = "constant2"></div>
+    <div id = "constant3"></div>
+
+    <div class = "grid" id = "constant1">
+      <br /><br />
+      <div class = "grid__item grid__item--2">&nbsp;</div>
+       <div class = "grid__item grid__item--3">
+         <font size = "6" id = "quote" color = "#3498db" >Create Quote</font>
+       </div>
+
+       <div class = "grid__item grid__item--3">&nbsp;</div>
+
+              <div class = "grid__item grid__item--1">
+                <div class = "btn btn--tertiary btn--tiny"><code class = "text--primary" ><b>cancel</b></code></div>
+              </div>
+                <div class = "grid__item grid__item--1">
+                <div class = "btn btn--success btn--tiny"><code class = "text--primary" ><b>save</b></code></div>
+              </div>
+      </div>
+
+
+
+
+<!-- Elements inside Form for user access -->
+
+
+  <form class = "form">
+    <div id="dec">
+
+<br /><br /><br /><br /><br /><br />
+          <div class = "grid">
+              <div class = "grid_item grid__item--9">
+                <font size = "10">Finday Quote</font>
+              </div>
+            </div>
+
+                     <div class ="grid">
+                       <div class = "grid_item grid__item--3">&nbsp;</div>
+                       <div class = "grid_item grid__item--3">
+                          <ul>
+                            <a href = "#QD"><li><font size = '4'>Quote Details</li></a><br /><br />
+                            <a href = "#AD"><li><font size = '4'>Additional Information</li></a><br /><br />
+                            <a href = "#NT"><li><font size = '4'>Note to...</li></a><br /><br />
+                            <a href = "#"><li><font size = '4'>About</li></a><br /><br />
+                            <a href = "#"><li><font size = '4'>Features</li></a>
+                          </ul>
+                        </div>
+                      </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<!-- Quote details -->
+           <div class = "grid__item--9">
+             <font id = "QD">&nbsp;</font>
+           </div><br /><br /><br /><br /><br />
+
+          <div class = " grid__item--9">
+             <font class = "text--primary" size = "4.5">>Quote Details</font>
+             <hr></hr>
+           </div>
+
+<br /><br />
+
+
+         <div  class = "grid">
+             <div class = "grid__item grid__item--4">
+
+                <font>Quote name</font>
+                <input class = "input" placeholder = "Quote name">
+            </div>
+
+            <div class = "grid__item grid__item--1">&nbsp;</div>
+
+              <div class = "grid__item grid__item--4">
+                <font>Customer</font>
+                <input class = "input" placeholder = "Customer name" >
+            </div>
+          </div>
+<br /><br /><br />
+
+               <div class = "grid">
+
+                  <div class = "grid__item grid__item--4 ">
+
+                      <font>Deliver Goods&nbsp;<sub>To<sup>*</sup></sub></font>
+                      <i style = "float:right" class="fa fa-pencil-square-o"></i>
+
+                      <textarea class = "input"></textarea>
+                    </div>
+
+                    <div class = "grid__item grid__item--1">&nbsp;</div>
+
+                    <div class = "grid__item grid__item--4 ">
+
+                      <font>Billing&nbsp;<sub>To<sub>*</font>
+                        <i style = "float:right" class="fa fa-pencil-square-o"></i>
+
+                      <textarea class = " input"></textarea>
+                    </div>
+
+               </div>
+<br /><br /><br />
+
+               <div class = "grid">
+
+                  <div class = "grid__item grid__item--4 ">
+
+                    <br /><br /><font>Address Verified</font>
+                    <i style = "float:right;size:35px" class="fa fa-toggle-on"></i>
+                    </div>
+
+
+
+                    <div class = "grid__item grid__item--1">&nbsp;</div>
+
+                    <div class = "grid__item grid__item--4 ">
+
+                      <font>Order Type</font>
+                    <select class = "input"></select>
+                    </div>
+
+               </div>
+<br /><br /><br /><br /><br /><br />
+
+
+<!-- additional information -->
+<div class = "grid__item--9">
+  <font id = "AD">&nbsp;</font>
+</div><br /><br /><br /><br /><br />
+
+<div class = "grid">
+  <div class = "grid__item grid__item--9">
+      <font class = "text--primary">Additional Information</font>
+        <hr></hr>
+    </div>
+</div>
+
+<br /><br />
+
+<div  class = "grid">
+  <div class = "grid__item grid__item--4">
+
+     <font>PaymentTerms</font>
+     <input class="input">
+  </div>
+  <div class = "grid__item grid__item--1">&nbsp;</div>
+
+  <div class = "grid__item grid__item--4">
+    <font>PO Number</font>
+    <input class="input" placeholder="PO Number">
+
+  </div>
+</div>
+
+<br /><br /><br /><br />
+
+              <div class ="grid">
+                  <div class = "grid__item grid__item--4">
+
+                    <font>ExpectedDelivaryDate</font>
+                    <div class = "input-icon input-icon--right">
+                      <i class= "fa fa-calendar input-icon__icon"></i>
+                      <input class = "input input-icon__input"></div>
+
+                  </div>
+
+                    <div class = "grid__item grid__item--1">&nbsp;</div>
+
+                    <div class = "grid__item grid__item--4">
+
+                      <font>RequestedDate</font><br>
+                    <div class = "input-icon input-icon--right ">
+                        <i class= "fa fa-calendar  input-icon__icon"></i>
+                        <input class = "input input-icon__input"></div>
+                    </div>
+                </div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+<!-- Quote Note -->
+<div class = "grid__item--9">
+  <font id = "NT">&nbsp;</font>
+</div><br /><br /><br /><br /><br />
+
+                <div class = "grid">
+                  <div class = "grid__item grid__item--9">
+                      <font class = "text--primary" id = "NT">Note To.....</font>
+                        <hr></hr>
+                    </div>
+                </div>
+<br /><br />
+
+<div  class = "grid">
+  <div class = "grid__item grid__item--3">
+          <font>Customer</font><br>
+          <textarea class = "input" placeholder="Customer"></textarea><br>
+
+  </div>
+  <div class = "grid__item grid__item--3">
+        <font>BackOffice</font><br>
+        <textarea class = "input" placeholder="BankOffice"></textarea><br>
+
+  </div>
+    <div class = "grid__item grid__item--3">
+        <font>Carrier</font><br>
+        <textarea class = "input" placeholder="Carrier"></textarea><br>
+     </div>
+</div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br />
+</div>
+</form>
+</body>
+</html>
